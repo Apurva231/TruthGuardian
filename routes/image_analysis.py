@@ -1,11 +1,27 @@
 from fastapi import APIRouter, UploadFile, File
-from services.image import analyze_image
-from services.save_result import save_to_db
+from image_detection import analyze_face_image
+from database.mongo import fs, image_results_collection
 
 router = APIRouter()
 
-@router.post("/analyze_image")
+@router.post("/api/image-detect")
 async def analyze_image_route(file: UploadFile = File(...)):
-    result = await analyze_image(file)
+    file_bytes = await file.read()
+
+    # Analyze image
+    result = analyze_face_image(file_bytes)
+
+    # Store image in GridFS
+    image_id = fs.put(file_bytes, filename=file.filename, content_type=file.content_type)
+
+    # Store result in MongoDB
+    record = {
+        "image_id": image_id,
+        "filename": file.filename,
+        "content_type": file.content_type,
+        "label": result["label"],
+        "confidence": result["confidence"]
+    }
+    image_results_collection.insert_one(record)
+
     return result
-    save_to_db(result)  

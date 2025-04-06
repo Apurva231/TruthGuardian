@@ -1,0 +1,154 @@
+/* src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1b2a;
+  font-family: 'Inter', sans-serif;
+  color: #e0f7fa;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e5ff;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0f7fa;
+}
+
+/* Universal Container */
+.container {
+  background: #1b263b;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+  border-left: 5px solid #00e5ff;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 35px rgba(0, 229, 255, 0.2);
+}
+
+/* Form Inputs */
+input, textarea, select {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: #11212d;
+  border: 1px solid #00e5ff55;
+  border-radius: 10px;
+  color: #e0f7fa;
+  transition: 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #00e5ff;
+  box-shadow: 0 0 6px rgba(0, 229, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  background: #00e5ff;
+  color: #0d1b2a;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.4);
+}
+
+button:hover {
+  background: #00bcd4;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Result Box */
+.result-card {
+  background: #11212d;
+  border-left: 5px solid #ff6f61;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  color: #fefefe;
+  box-shadow: 0 6px 20px rgba(255, 111, 97, 0.2);
+}
+
+.result-card h2 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0d1b2a;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #00e5ff44;
+  box-shadow: 0 4px 10px rgba(0, 229, 255, 0.05);
+}
+
+.navbar a {
+  color: #e0f7fa;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: #1b263b;
+  color: #e0f7fa;
+  padding: 30px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  text-align: center;
+  border-top: 1px solid #00e5ff33;
+}

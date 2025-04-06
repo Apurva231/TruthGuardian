@@ -1,0 +1,33 @@
+.image-detector {
+    background-color: #0d1b2a;
+    color: #e0f7fa;
+    padding: 50px 30px;
+    min-height: 100vh;
+  }
+  
+  .image-detector h2 {
+    color: #00e5ff;
+    font-size: 2rem;
+  }
+  
+  .image-upload-section {
+    margin-top: 30px;
+    background: #1b263b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+  }
+  
+  /* Insights Page */
+  .insights-dashboard {
+    padding: 40px 20px;
+    background-color: #11212d;
+    color: #e0f7fa;
+    min-height: 100vh;
+  }
+  
+  .insights-dashboard h2 {
+    font-size: 2rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+  }

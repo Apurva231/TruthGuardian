@@ -1,0 +1,51 @@
+.about-page {
+    background-color: #0d1b2a;
+    color: #e0f7fa;
+    padding: 60px 30px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .about-page h2 {
+    font-size: 2.5rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+  }
+  
+  .about-page p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+  
+  /* Audio Detector Page */
+  .audio-detector {
+    background-color: #11212d;
+    padding: 50px 30px;
+    color: #e0f7fa;
+    min-height: 100vh;
+  }
+  
+  .audio-detector h2 {
+    color: #00e5ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .audio-upload-box {
+    background: #1b263b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .audio-upload-box input[type="file"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0d1b2a;
+    color: #e0f7fa;
+    border-radius: 8px;
+    border: 1px solid #00e5ff55;
+  }

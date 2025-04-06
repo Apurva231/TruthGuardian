@@ -1,0 +1,22 @@
+.tools-page {
+    background-color: #0d1b2a;
+    color: #e0f7fa;
+    padding: 60px 20px;
+  }
+  
+  .tools-page h2 {
+    color: #00e5ff;
+    font-size: 2rem;
+  }
+  
+  .tool-card {
+    background: #1b263b;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.1);
+  }
+  
+  .tool-card h3 {
+    color: #00e5ff;
+  }
