@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import image_analysis, text_analysis, audio_analysis
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
 app.add_middleware(
     CORSMiddleware,

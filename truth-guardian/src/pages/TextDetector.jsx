@@ -25,7 +25,11 @@ const TextDetector = () => {
 
       const data = await response.json();
       console.log("Response from API:", data); // helpful for debugging
-      setResult(data);
+      setResult({
+        verdict: data.label,
+        confidence: data.score,
+        suggestions: data.suggestions || [],
+      });
     } catch (error) {
       console.error('Error analyzing text:', error);
       setResult({ verdict: 'Server error. Please try again later.' });

@@ -12,8 +12,8 @@ async def analyze_text_route(input_data: TextInput):
     # Store result in MongoDB
     record = {
         "text": input_data.text,
-        "label": result.label,
-        "score": result.score
+        "verdict": result.verdict,
+        "confidence": result.confidence
     }
     text_results_collection.insert_one(record)
 
