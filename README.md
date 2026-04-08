@@ -1,4 +1,4 @@
-# 🛡️ Truth Guardian — Fake News & Rumour Detector
+# 🛡️ Truth Guardian — Fake News & Rumor Detector
 
 <div align="center">
 

@@ -62,3 +62,14 @@ Thumbs.db
 *.egg-info/
 .idea/
 .vscode/
+
+# Virtual environments (ALL of them)
+.venv/
+venv/
+deepfake_detector/venv/
+
+# Large model files
+*.h5
+*.pkl
+*.pyd
+*.dll
