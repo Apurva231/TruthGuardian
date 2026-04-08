@@ -1,1 +1,64 @@
+# ============ PYTHON ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# ============ ML MODELS & LARGE FILES ============
+*.h5
+*.pkl
+*.pt
+*.pth
+*.bin
+*.onnx
+tokenizer.pkl
+fake_audio_detector.h5
+text_detector_model.h5
+
+# ============ AUDIO / MEDIA FILES ============
+*.wav
+*.mp3
+*.mp4
+*.avi
+temp_*.wav
+
+# ============ DATABASE ============
+*.db
+*.sqlite3
+
+# ============ ENVIRONMENT & SECRETS ============
 .env
+key.json
+*.pem
+*.key
+
+# ============ REACT / NODE ============
+node_modules/
+build/
+dist/
+.npm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============ TEST IMAGES ============
+deepfake_detector/test_image*.png
+deepfake_detector/test_image*.jpg
+
+# ============ MISC ============
+allfiles.txt
+.DS_Store
+Thumbs.db
+*.egg-info/
+.idea/
+.vscode/

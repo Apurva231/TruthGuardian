@@ -1,7 +1,12 @@
-GOOGLE_FACT_CHECK_API_KEY = 'AIzaSyCaxgI1rS_BiYJZGuOqE5usisbVN_Yh864'
-NEWSAPI_KEY = '77f6e51c9d634b36a75d665c285a4ff3'
-
+import os
+from dotenv import load_dotenv
 import requests
+
+load_dotenv()
+
+GOOGLE_FACT_CHECK_API_KEY = os.getenv("GOOGLE_FACT_CHECK_API_KEY")
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+
 
 def verify_with_google_fact_check(claim):
     url = f"https://factchecktools.googleapis.com/v1alpha1/claims:search"
